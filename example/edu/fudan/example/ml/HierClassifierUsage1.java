@@ -1,8 +1,6 @@
 package edu.fudan.example.ml;
 
 
-import java.io.File;
-
 import edu.fudan.ml.classifier.hier.Linear;
 import edu.fudan.ml.classifier.hier.PATrainer;
 import edu.fudan.ml.classifier.hier.inf.MultiLinearMax;
@@ -15,6 +13,8 @@ import edu.fudan.ml.types.alphabet.AlphabetFactory;
 import edu.fudan.ml.types.alphabet.LabelAlphabet;
 import edu.fudan.ml.types.sv.HashSparseVector;
 import edu.fudan.ml.types.sv.ISparseVector;
+
+import java.io.File;
 /**
  * 层次分类器使用示例
  * 

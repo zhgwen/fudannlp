@@ -1,13 +1,13 @@
 package org.fnlp.app.lucene;
 
-import java.io.IOException;
-import java.io.Reader;
-
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.apache.lucene.util.AttributeSource;
+
+import java.io.IOException;
+import java.io.Reader;
 
 public final class SentenceTokenizer extends Tokenizer {
 
@@ -34,7 +34,7 @@ public final class SentenceTokenizer extends Tokenizer {
   }
 
   public SentenceTokenizer(AttributeSource source, Reader reader) {
-    super(source, reader);
+    super(source.getAttributeFactory(), reader);
   }
 
   public SentenceTokenizer(AttributeFactory factory, Reader reader) {
