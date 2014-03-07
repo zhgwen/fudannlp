@@ -1,8 +1,6 @@
 package edu.fudan.example.ml;
 
 
-import java.io.File;
-
 import edu.fudan.data.reader.SimpleFileReader;
 import edu.fudan.ml.classifier.hier.Linear;
 import edu.fudan.ml.classifier.hier.PATrainer;
@@ -18,6 +16,8 @@ import edu.fudan.nlp.pipe.Pipe;
 import edu.fudan.nlp.pipe.SeriesPipes;
 import edu.fudan.nlp.pipe.StringArray2SV;
 import edu.fudan.nlp.pipe.Target2Label;
+
+import java.io.File;
 
 /**
  * 层次分类器使用示例
