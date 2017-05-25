@@ -89,7 +89,7 @@ public class Evaluation  {
 		TPredict[] res = cl.classify(test,1);
 		int[] pred = new int[res.length];
 		for(int i=0;i<res.length;i++){
-			pred[i] = (Integer) res[i].getLabel(i);
+			pred[i] = (Integer) res[i].getLabel(0);
 		}
 		float Accuracy;
 		float MarcoF;
